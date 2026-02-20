@@ -2,6 +2,13 @@
 // Οι διευθύνσεις των υπηρεσιών – αντικατέστησέ τις με τις πραγματικές URLs
 const services = [
   {
+    id: "sales-guide",
+    icon: "target",
+    title: "Οδηγός Στρατηγικής Πωλήσεων",
+    description: "Επίλεξε τύπο επιχείρησης για καθοδήγηση",
+    url: "https://sales-esoteriko-categories.vercel.app/",
+  },
+  {
     id: "proposal",
     icon: "document",
     title: "Proposal",
@@ -98,6 +105,13 @@ const services = [
                       <>
                         <circle cx="12" cy="12" r="10" />
                         <path d="M12 6v6l4 2" />
+                      </>
+                    )}
+                    {service.icon === "target" && (
+                      <>
+                        <circle cx="12" cy="12" r="10" />
+                        <circle cx="12" cy="12" r="6" />
+                        <circle cx="12" cy="12" r="2" />
                       </>
                     )}
                   </svg>
